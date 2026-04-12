@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashok Kumar | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1",
+              secondary: "#a855f7",
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-950 text-gray-100 font-sans antialiased">
+
+    <!-- ───────────────────────── NAVBAR ───────────────────────── -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-gray-950/80 backdrop-blur border-b border-gray-800">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <span class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Ashok Kumar
+        </span>
+        <ul class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+          <li><a href="#about"    class="hover:text-white transition">About</a></li>
+          <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
+          <li><a href="#skills"   class="hover:text-white transition">Skills</a></li>
+          <li><a href="#contact"  class="hover:text-white transition">Contact</a></li>
+        </ul>
+        <a
+          href="#contact"
+          class="hidden md:inline-block px-4 py-2 rounded-lg bg-primary hover:bg-indigo-500 text-sm font-semibold transition"
+        >
+          Hire Me
+        </a>
+      </nav>
+    </header>
+
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section class="min-h-screen flex items-center justify-center text-center px-6 pt-24">
+      <div class="max-w-3xl">
+        <!-- Avatar placeholder -->
+        <div class="mx-auto mb-6 w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl font-bold shadow-lg shadow-indigo-900/50">
+          AK
+        </div>
+
+        <p class="text-sm uppercase tracking-widest text-indigo-400 mb-3 font-medium">
+          MCA Student · Aspiring AI/ML Engineer
+        </p>
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Hi, I'm
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Ashok Kumar
+          </span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+          I build intelligent web applications and AI-powered tools that solve real-world problems.
+          Passionate about machine learning, natural language processing, and clean user experiences.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a
+            href="#projects"
+            class="px-7 py-3 rounded-xl bg-primary hover:bg-indigo-500 font-semibold transition shadow-lg shadow-indigo-900/40"
+          >
+            View Projects
+          </a>
+          <a
+            href="#contact"
+            class="px-7 py-3 rounded-xl border border-gray-700 hover:border-primary hover:text-primary font-semibold transition"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── ABOUT ───────────────────────── -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+          About
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Me</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="space-y-4 text-gray-300 leading-relaxed">
+            <p>
+              I'm a passionate <strong class="text-white">MCA student</strong> with a deep interest in
+              Artificial Intelligence and Machine Learning. I love turning complex ideas into elegant,
+              user-friendly applications.
+            </p>
+            <p>
+              My journey in tech started with web development and quickly expanded into AI/ML, where I
+              discovered the power of combining intelligent algorithms with intuitive interfaces.
+            </p>
+            <p>
+              When I'm not coding, I'm exploring the latest research papers, contributing to open-source
+              projects, and finding creative ways to solve everyday problems with technology.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-900 rounded-xl p-5 border border-gray-800 text-center">
+              <p class="text-4xl font-bold text-primary mb-1">2+</p>
+              <p class="text-sm text-gray-400">Projects Shipped</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-5 border border-gray-800 text-center">
+              <p class="text-4xl font-bold text-secondary mb-1">AI</p>
+              <p class="text-sm text-gray-400">Focus Area</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-5 border border-gray-800 text-center">
+              <p class="text-4xl font-bold text-primary mb-1">MCA</p>
+              <p class="text-sm text-gray-400">Degree</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-5 border border-gray-800 text-center">
+              <p class="text-4xl font-bold text-secondary mb-1">∞</p>
+              <p class="text-sm text-gray-400">Curiosity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── PROJECTS ───────────────────────── -->
+    <section id="projects" class="py-24 px-6 bg-gray-900/50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Featured
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Projects</span>
+        </h2>
+        <p class="text-gray-400 text-center mb-14 max-w-xl mx-auto">
+          A selection of the projects I've built — ranging from AI-powered platforms to full-stack web applications.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <!-- ── VASTRIO ── -->
+          <article class="group bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-xl hover:shadow-indigo-900/30">
+            <!-- Project banner -->
+            <div class="h-48 bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-700 flex items-center justify-center relative overflow-hidden">
+              <span class="text-5xl font-extrabold tracking-widest text-white/20 select-none">VASTRIO</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-3xl font-bold text-white drop-shadow-lg">VASTRIO</span>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-xl font-bold text-white group-hover:text-primary transition">VASTRIO</h3>
+                <span class="px-2 py-1 text-xs rounded-md bg-indigo-900/60 text-indigo-300 border border-indigo-800">
+                  Full-Stack
+                </span>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed mb-5">
+                VASTRIO is a comprehensive web platform designed to streamline operations and deliver
+                powerful features through a modern, responsive interface. Built with performance and
+                scalability in mind, it leverages the latest web technologies to provide a seamless
+                user experience.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">HTML</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">CSS</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">JavaScript</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">Node.js</span>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="flex-1 text-center py-2 rounded-lg bg-primary hover:bg-indigo-500 text-sm font-semibold transition"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="#"
+                  class="flex-1 text-center py-2 rounded-lg border border-gray-700 hover:border-primary hover:text-primary text-sm font-semibold transition"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Rapid English AI ── -->
+          <article class="group bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-secondary transition-all duration-300 hover:shadow-xl hover:shadow-purple-900/30">
+            <!-- Project banner -->
+            <div class="h-48 bg-gradient-to-br from-purple-700 via-pink-700 to-orange-600 flex items-center justify-center relative overflow-hidden">
+              <span class="text-5xl font-extrabold tracking-widest text-white/20 select-none">AI</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-3xl font-bold text-white drop-shadow-lg">Rapid English AI</span>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-xl font-bold text-white group-hover:text-secondary transition">Rapid English AI</h3>
+                <span class="px-2 py-1 text-xs rounded-md bg-purple-900/60 text-purple-300 border border-purple-800">
+                  AI / NLP
+                </span>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed mb-5">
+                Rapid English AI is an intelligent language-learning platform powered by Natural Language
+                Processing. It helps users master English quickly through AI-driven practice sessions,
+                real-time grammar correction, vocabulary building, and personalized learning paths.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">Python</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">NLP</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">React</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">FastAPI</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300">OpenAI</span>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="flex-1 text-center py-2 rounded-lg bg-secondary hover:bg-purple-500 text-sm font-semibold transition"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="#"
+                  class="flex-1 text-center py-2 rounded-lg border border-gray-700 hover:border-secondary hover:text-secondary text-sm font-semibold transition"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── SKILLS ───────────────────────── -->
+    <section id="skills" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+          Technical
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Skills</span>
+        </h2>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-primary transition">
+            <div class="text-2xl mb-3">🌐</div>
+            <h3 class="font-semibold text-white mb-3">Web Development</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">HTML5</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">CSS3</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">JavaScript</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">Tailwind CSS</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">React</span>
+            </div>
+          </div>
+
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-secondary transition">
+            <div class="text-2xl mb-3">🤖</div>
+            <h3 class="font-semibold text-white mb-3">AI / ML</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">Python</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">TensorFlow</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">scikit-learn</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">NLP</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">OpenAI API</span>
+            </div>
+          </div>
+
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-primary transition">
+            <div class="text-2xl mb-3">⚙️</div>
+            <h3 class="font-semibold text-white mb-3">Backend & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">Node.js</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">FastAPI</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">MongoDB</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">MySQL</span>
+              <span class="px-2 py-1 text-xs rounded bg-gray-800 text-gray-300">Git</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── CONTACT ───────────────────────── -->
+    <section id="contact" class="py-24 px-6 bg-gray-900/50">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Get In
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Touch</span>
+        </h2>
+        <p class="text-gray-400 mb-10">
+          I'm currently open to freelance opportunities, internships, and full-time roles.
+          Feel free to reach out!
+        </p>
+        <a
+          href="mailto:ashok@example.com"
+          class="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-secondary hover:opacity-90 font-bold text-lg transition shadow-lg shadow-indigo-900/40"
+        >
+          Say Hello 👋
+        </a>
+
+        <!-- Social links -->
+        <div class="flex justify-center gap-6 mt-10">
+          <a href="#" class="text-gray-400 hover:text-white transition text-sm font-medium">GitHub</a>
+          <a href="#" class="text-gray-400 hover:text-white transition text-sm font-medium">LinkedIn</a>
+          <a href="#" class="text-gray-400 hover:text-white transition text-sm font-medium">Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── FOOTER ───────────────────────── -->
+    <footer class="py-8 px-6 border-t border-gray-800 text-center text-sm text-gray-500">
+      <p>© 2024 Ashok Kumar. Built with ❤️ using HTML &amp; Tailwind CSS.</p>
+    </footer>
+
+  </body>
+</html>
